@@ -71,7 +71,7 @@ func main() {
 	}
 	defer db.Close()
 
-	// Cache initialization
+	// Cache on server initialization
 	templateCache, err := newTemplateCache()
 	if err != nil {
 		errorLog.Fatal(err)
